@@ -1,20 +1,32 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useState } from 'react';
+import {
+  StyleSheet,
+  Text,
+  View,
+  SafeAreaView,
+  TouchableOpacity,
+ } from 'react-native';
+import Header from './components/header';
+import Homepage from './pages/homepage';
+// import "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap";
 
 export default function App() {
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView>
+      <Homepage />
+
+      {/* Using another method "FlatList" instead of "ScrollView" */}
+      {/* <ScrollView style={styles.list}>
+        {products.map((product) => {
+          return (
+            <View key={product.key} style={styles.listItem}>
+              <Text>{product.productName}</Text>
+            </View>
+          )
+        })}
+      </ScrollView> */}
+    </SafeAreaView>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

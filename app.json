@@ -18,16 +18,25 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.abbymerndev.ksaprice"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.abbymerndev.ksaprice"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a02d8d2c-4dd6-46c7-ad84-106cb063f1a6"
+      }
+    },
+    "description": "Make informed decisions based on real time stats from various online resources for the products you desire!",
+    "owner": "abbymerndev"
   }
 }
